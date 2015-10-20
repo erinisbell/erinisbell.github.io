@@ -3,3 +3,94 @@
 @import "bourbon";
 @import "neat";
 
+
+$bg-gray: #FAFAFA;
+$border-color: rgb(237, 238, 238);
+$link-color: #125688;
+$location-color: #4090db;
+$location-color-hover: #20486D;
+$like-color: #4b4f54;
+
+* {
+        font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+}
+
+ul.comments {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding-bottom: 2px;
+    .userlink {
+      margin-right: 4.5px;
+    }
+  }
+}
+
+body {
+        background-color: $bg-gray;
+}
+
+section {
+        width: 600px;
+        margin: 0 auto 0 auto;
+}
+
+article {
+        background-color: white;
+        border: 1px solid $border-color;
+        margin-bottom: 60px;
+
+        header {
+                @include row;
+                padding: 14px 20px 14px 20px;
+                border-bottom: 1px solid $border-color;
+                .avatar {
+                        @include span-columns(1);
+                }
+                .links {
+                        @include span-columns(9);
+                }
+                time {
+                        @include span-columns(2);
+                }
+                .userlink {
+                        margin-right: 100%;
+                }
+        }
+
+        img {
+                width: 100%;
+        }
+        .info {
+                border-top: 1px solid $border-color;
+                @include padding(20px 24px 7px 24px);
+                .likes {
+                        color: $like-color;
+                        font-weight: 600;
+                }
+        }
+}
+time {
+        color: gray;
+}
+
+a, a:visited {
+        text-decoration: none;
+        color: $link-color;
+}
+a.locationlink {
+        color: $location-color;
+}
+a:hover.locationlink {
+        color: $location-color-hover;
+}
+a.userlink {
+        font-weight: 600;
+}
+
+img.avatar {
+        width: 30px;
+        border-radius: 50%;
+}
