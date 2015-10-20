@@ -1,0 +1,4 @@
+<% wrap_layout :layout do %>
+  <% picture = current_article %>
+  <%= partial :picture, locals: {avatar: picture.data.avatar, username: picture.data.username, location: picture.data.location, posted_at: picture.date, picture: picture.data.picture, likes: picture.data.likes, caption: picture.data.caption, picture_url: nil, id: 1 } %>
+<% end %>

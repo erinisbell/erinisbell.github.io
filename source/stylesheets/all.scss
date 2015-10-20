@@ -4,16 +4,16 @@
 @import "neat";
 
 
-$bg-gray: #FAFAFA;
-$border-color: rgb(237, 238, 238);
+$bg-gray: #de4b3b;
+$border-color: #66FFCC;
 $link-color: #125688;
 $location-color: #4090db;
 $location-color-hover: #20486D;
 $like-color: #4b4f54;
 
 * {
-        font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        font-size: 10pt;
+        font-family: 'Helvetica Neue';
+        font-size: 11pt;
 }
 
 ul.comments {
@@ -38,7 +38,7 @@ section {
 }
 
 article {
-        background-color: white;
+        background-color: #608080;
         border: 1px solid $border-color;
         margin-bottom: 60px;
 

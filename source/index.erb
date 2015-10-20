@@ -1,0 +1,3 @@
+<% page_articles.each_with_index do |picture, id| %>
+  <%= partial :picture, locals: {avatar: picture.data.avatar, username: picture.data.username, location: picture.data.location, posted_at: picture.date, picture: picture.data.picture, likes: picture.data.likes, caption: picture.data.caption, picture_url: picture.url, id: id } %>
+<% end %>

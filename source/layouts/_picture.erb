@@ -1,0 +1,34 @@
+<section>
+  <article>
+    <header>
+      <img class="avatar" src="<%= avatar %>" />
+      <div class="links">
+        <a href="#" class="userlink"><%= username %></a>
+        <a href="#" class="locationlink"><%= location %></a>
+      </div>
+      <div id="timestamp-<%= id %>"/>
+        <script type="text/javascript">
+          React.render(
+            React.createElement(TimeField, {time: "<%= posted_at %>"}),
+          document.getElementById('timestamp-<%= id %>')
+          );
+        </script>
+      </header>
+      <% if picture_url %>
+        <a href="<%= picture_url %>">
+          <img src="<%= picture %>"/>
+        </a>
+      <% else %>
+        <img src="<%= picture %>"/>
+      <% end %>
+      <div class="info">
+        <div class="likes"><%= likes %> likes</div>
+        <ul class="comments">
+          <% if caption %>
+            <li><a href="#" class="userlink"><%= username %></a><%= caption %></li>
+          <% end %>
+        </ul>
+      </div>
+    </article>
+  </section>
+
