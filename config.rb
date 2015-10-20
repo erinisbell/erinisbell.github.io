@@ -73,3 +73,6 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
   end
+  activate :blog do |blog|
+  # set options on blog
+end
