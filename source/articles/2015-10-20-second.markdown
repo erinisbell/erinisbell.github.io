@@ -1,7 +1,7 @@
 ---
 title: Second
-date: 2015-10-20 21:08 UTC
+date: 2015-10-20 21:04 UTC
 tags:
 ---
 
-This is even more blogging on the second post. 
+This is even more blogging on the second post. It is not very pretty but it's a work in progress. 
