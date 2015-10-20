@@ -1,3 +1,5 @@
-<% page_articles.each_with_index do |picture, id| %>
-  <%= partial :picture, locals: {avatar: picture.data.avatar, username: picture.data.username, location: picture.data.location, posted_at: picture.date, picture: picture.data.picture, likes: picture.data.likes, caption: picture.data.caption, picture_url: picture.url, id: id } %>
+<h1>index</h1>
+<% page_articles.each do |article| %>
+  <h2><%= article.title %></h2>
+  <%= link_to "Read More", article %>
 <% end %>

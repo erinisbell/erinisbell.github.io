@@ -73,7 +73,7 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
   end
-  activate :blog do |blog|
-  blog.layout = "picture"
-  blog.sources = "pictures/:year-:month-:day-:title"
+activate :blog do |blog|
+  blog.sources = "articles/:year-:month-:day-:title"
+  blog.layout = "article"
 end
