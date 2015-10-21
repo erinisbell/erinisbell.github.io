@@ -72,6 +72,6 @@ nav{
 
 .about {
   margin: 40px;
-  @include span-columns(6);
+  @include span-columns(4);
   color: $creme;
 }
