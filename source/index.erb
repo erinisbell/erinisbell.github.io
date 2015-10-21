@@ -1,6 +1,8 @@
 <h1>My Blog</h1>
 <% page_articles.each do |article| %>
-  <h2><%= article.title %></h2>
+  <article>
+    <h2><%= article.title %></h2>
     <!-- <p><%= article.summary %></p> this is for putting summarys -->
   <%= link_to "Read More", article %>
+</article>
 <% end %>
