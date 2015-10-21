@@ -5,7 +5,7 @@
 
 $mobile: new-breakpoint(max-width 500px 4);
 $pink: #d3b1a7;
-// darker pink = #cb654f
+$darkerpink: #cb654f;
 // beighe = #cfcb9c
 // teal = #8cbea3
 // yellow =#dfba47
@@ -42,7 +42,7 @@ a, a:visited {
 
 
 .index {
-    color: #cb654f;
+    color: $darkerpink;
     margin-left: 50px;
 
 }
