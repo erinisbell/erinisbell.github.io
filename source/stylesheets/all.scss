@@ -6,49 +6,42 @@
 $mobile: new-breakpoint(max-width 500px 4);
 $pink: #d3b1a7;
 $darkerpink: #cb654f;
-// beighe = #cfcb9c
+$beighe: #cfcb9c;
 // teal = #8cbea3
-// yellow =#dfba47
+$yellow: #dfba47;
 
 * {
-        font-family: 'Futura';
-        font-size: 10pt;
+ font-family: 'Futura';
+ font-size: 10pt;
 }
 
 
 body {
-        background-color: $pink;
-
+ background-color: $pink;
 }
 
 .index img {
-
-    width: 24.5px;
-
-
+ width: 24.5px;
 }
 
 .container {
-  @include outer-container;
-
+ @include outer-container;
 }
 
 a, a:visited {
-    text-decoration: none;
-    color: #cfcb9c;
-    margin-left: 50px;
-
+ text-decoration: none;
+ color: $beighe;
+ margin-left: 50px;
 }
 
 
 .index {
-    color: $darkerpink;
-    margin-left: 50px;
-
+ color: $darkerpink;
+ margin-left: 50px;
 }
 
 a:hover {
-  @include animation(scale 1.0s ease-in, slide 2.0s ease);
+ @include animation(scale 1.0s ease-in, slide 2.0s ease);
 
 }
 
@@ -60,13 +53,19 @@ article{
 }
 
 nav{
-  padding: 40px;
-@include media($mobile) {
-  padding: 0;
+ padding: 40px;
+ @include media($mobile) {
+ padding: 0;
+}
 }
 
-}
 .contact img {
 width: 24.5px;
+}
 
+
+.about {
+  margin: 40px;
+  @include span-columns(6);
+  color: $darkerpink;
 }

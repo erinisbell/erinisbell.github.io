@@ -4,4 +4,4 @@ date: 2015-10-21 17:57 UTC
 tags:
 ---
 
-Learning to program 
+I've been told that learning to program is something that teenagers do and not adults.
