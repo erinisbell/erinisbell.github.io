@@ -14,12 +14,13 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <nav> <%= link_to "Home", "/" %>
-      <%= link_to "About Me", "/about.html" %>
-    <a href="mailto:erinmarie.isbell@gmail.com">Contact</a>
-  </nav>
-  <div class ="container">
-  <%= yield %>
-</div>
+    <nav>
+      <%= link_to "Home", "/", class: "btn" %>
+      <%= link_to "About Me", "/about.html", class: 'btn' %>
+      <a href="mailto:erinmarie.isbell@gmail.com">Contact</a>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
