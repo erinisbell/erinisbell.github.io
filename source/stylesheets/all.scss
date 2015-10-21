@@ -4,12 +4,6 @@
 @import "neat";
 
 
-$bg-gray: #d3b1a7;
-$border-color: #66FFCC;
-$link-color: #125688;
-$location-color: #4090db;
-$location-color-hover: #20486D;
-$like-color: #4b4f54;
 
 * {
         font-family: 'Futura';
@@ -18,14 +12,24 @@ $like-color: #4b4f54;
 
 
 body {
-        background-color: $bg-gray;
+        background-color: #d3b1a7;
 }
 
 
 a, a:visited {
     text-decoration: none;
-    color: Green; 
+    color: #cfcb9c; 
+    margin-right: 35px;
+    margin-left: 22px;
 }
+
+
+.index {
+    color: #cb654f;
+    margin-left: 45px;
+    float: center;
+}
+
 
 
 // pink color = #d3b1a7
