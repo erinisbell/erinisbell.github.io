@@ -14,11 +14,9 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <nav>
     <%= link_to "Home", "/" %>
-    <%= link_to "Contact", "/contact.html" %>
-    <% link_to 'erinmarie.isbell@gmail.com' do %>
-  <%= image_tag 'http://mergy.org/wp-content/uploads/email-icon.png' %>
-<% end %>
+    <a href="mailto:erinmarie.isbell@gmail.com">Contact</a>
     <%= yield %>
   </body>
 </html>
