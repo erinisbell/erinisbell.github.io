@@ -13,7 +13,7 @@
 
 body {
         background-color: #d3b1a7;
-        
+
 }
 
 .index img {
@@ -23,10 +23,14 @@ body {
 
 }
 
+.container {
+  @include outer-container;
+
+}
 
 a, a:visited {
     text-decoration: none;
-    color: #cfcb9c; 
+    color: #cfcb9c;
     margin-left: 50px;
 
 }
@@ -35,7 +39,7 @@ a, a:visited {
 .index {
     color: #cb654f;
     margin-left: 50px;
-    
+
 }
 
 .index:hover {
@@ -53,6 +57,3 @@ width: 24.5px;
 // beighe = #cfcb9c
 // teal = #8cbea3
 // yellow =#dfba47
-
-
-
