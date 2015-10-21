@@ -13,6 +13,7 @@ $yellow: #dfba47;
 * {
  font-family: 'Futura';
  font-size: 10pt;
+ color: $darkerpink;
 }
 
 
@@ -45,8 +46,12 @@ a:hover {
 
 }
 
+h2 {
+  color: $darkerpink;
+}
+
 article{
-  @include span-columns(6);
+  @include span-columns(5);
   @include media($mobile) {
     @include span-columns(4);
   }
@@ -63,6 +68,10 @@ nav{
 width: 24.5px;
 }
 
+.pancake {
+
+  color: $beighe;
+}
 
 .about {
   margin: 40px;
