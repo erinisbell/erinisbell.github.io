@@ -3,21 +3,22 @@
 @import "base/base";
 @import "neat";
 
-$pink: #d3b1a7;
-$darkerpink: #cb654f;
-$beighe: #cfcb9c;
+$darkpink: #fe6d7e;
+$orange: #f19167;
+$salmon: #e8aa9d;
 // teal = #8cbea3
-$yellow: #dfba47;
+$brown: #3d1f1f;
+$creme: #fcded4;
 
 * {
   font-family: 'Futura';
   font-size: 10pt;
-  color: $darkerpink;
+  color: $darkpink;
 }
 
 
 body {
-  background-color: $pink;
+  background-color: $brown;
 }
 
 .index img {
@@ -30,18 +31,18 @@ body {
 
 a, a:visited {
   text-decoration: none;
-  color: $beighe;
+  color: $orange;
   margin-left: 50px;
 }
 
 
 .index {
-  color: $darkerpink;
+  color: $darkpink;
   margin-left: 50px;
 }
 
 h2 {
-  color: $darkerpink;
+  color: $darkpink;
 }
 
 article{
@@ -66,11 +67,11 @@ nav{
 
 .pancake {
 
-  color: $beighe;
+  color: $creme;
 }
 
 .about {
   margin: 40px;
   @include span-columns(6);
-  color: $darkerpink;
+  color: $creme;
 }
