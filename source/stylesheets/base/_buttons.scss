@@ -2,9 +2,9 @@
   appearance: none;
   // background-color: $action-color;
   border: 0;
-  border-radius: 50%;
-  color: #f19167;
-  cursor: grabbing;
+  border-radius: 60%;
+  color: black;
+  cursor: crosshair;
   display: inline-block;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -20,8 +20,8 @@
 
   &:hover,
   &:focus {
-    background-color: shade(#8cbea3, 20%);
-    color: #cfcb9c;
+    background-color: shade(gray, 30%);
+    color: gray transparent;
   }
 
   &:disabled {

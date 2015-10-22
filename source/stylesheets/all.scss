@@ -13,12 +13,12 @@ $creme: #fcded4;
 * {
   font-family: 'Futura';
   font-size: 10pt;
-  color: $darkpink;
+  color: black;
 }
 
 
 body {
-  background-color: $brown;
+  background-color: white;
 }
 
 .index img {
@@ -31,13 +31,13 @@ body {
 
 a, a:visited {
   text-decoration: none;
-  color: $orange;
+  color: black;
   margin-left: 50px;
 }
 
 
 .index {
-  color: $darkpink;
+  color: red;
   margin-left: 50px;
 }
 
@@ -54,10 +54,14 @@ article{
   }
 }
 
+.index nav {
+  border-style: solid gray;
+  color: gray;
+}
 nav{
   padding: 0;
   @include media($medium-screen-up) {
-    padding: 40px;
+    padding: 20px;
   }
 }
 
@@ -66,12 +70,14 @@ nav{
 }
 
 .pancake {
-
-  color: $creme;
+  color: black;
 }
 
 .about {
+  nav{
+    color: gray;
+  }
   margin: 40px;
   @include span-columns(4);
-  color: $creme;
+  color: black;
 }
