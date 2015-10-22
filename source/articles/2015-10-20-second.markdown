@@ -1,5 +1,5 @@
 ---
-title: Second
+title: Second Post
 date: 2015-10-20 21:04 UTC
 tags:
 ---
