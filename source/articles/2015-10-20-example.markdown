@@ -1,7 +1,0 @@
----
-title: First Post
-date: 2015-10-20 21:08 UTC
-tags:
----
-
-This is the first blog post. 

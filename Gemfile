@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'bourbon'
+gem 'materialize-sass'
 gem 'middleman', "~>3.4.0"
 gem 'middleman-blog'
 gem 'middleman-deploy', '~> 1.0'
