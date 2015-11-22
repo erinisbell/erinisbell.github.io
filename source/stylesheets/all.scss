@@ -86,3 +86,17 @@ nav{
   @include span-columns(4);
   color: black;
 }
+
+.head {
+  padding-left: 18px;
+}
+
+.homenav {
+  .btn{
+    float: right;
+  }
+  img {
+    height: 150px;
+    width: 200px;
+  }
+}
