@@ -15,21 +15,21 @@ $creme: #fcded4;
   font-family: 'Futura';
   font-size: 10pt;
   color: black;
-}
-
-
-body {
-  background-color: white;
+  @include background-image(url("/images/photo.png"));
+  background-position: center;
+  background-size: cover;
 }
 
 .index img {
   width: 24.5px;
+  background: none;
 }
 
 .container {
   color: gray;
   @include outer-container;
   border: 1px solid #ADADAD;
+  background: none;
 }
 
 a, a:visited {
@@ -51,6 +51,7 @@ h2 {
 article{
   padding: 20px;
   margin-bottom: 20px;
+  background: none;
   @include span-columns(4);
   @include media($medium-screen-up) {
     @include span-columns(2);
@@ -64,6 +65,7 @@ article{
 nav{
   color: gray;
   border-style: 1px solid gray;
+  background: none;
   padding: 0;
   @include media($medium-screen-up) {
     padding: 20px;
@@ -94,9 +96,13 @@ nav{
 .homenav {
   .btn{
     float: right;
+    padding-right: 37px;
+    background: none;
   }
+
   img {
     height: 150px;
     width: 200px;
+    background: none;
   }
 }
