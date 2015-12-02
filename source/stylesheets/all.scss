@@ -36,16 +36,19 @@ a, a:visited {
   text-decoration: none;
   color: black;
   margin-left: 50px;
+  background: none;
 }
 
 
 .index {
   color: gray;
   margin-left: 50px;
+  background: none;
 }
 
 h2 {
-  color: $darkpink;
+  color: black;
+  background: none;
 }
 
 article{
@@ -89,8 +92,9 @@ nav{
   color: black;
 }
 
-.head {
+.header {
   padding-left: 18px;
+  background: none;
 }
 
 .homenav {
