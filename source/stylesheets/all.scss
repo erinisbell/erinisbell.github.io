@@ -77,11 +77,20 @@ nav{
 
 .pancake {
   color: black;
+  background: none;
 }
 
+.master {
+  color: black;
+  background: none;
+}
 .about {
   nav{
     color: gray;
+  }
+  .pic {
+    height: 262px;
+    width: 175px;
   }
   @include span-columns(4);
   color: black;
