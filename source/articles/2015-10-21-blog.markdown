@@ -1,13 +1,9 @@
 ---
-title: Learning To Program
+title: About Me
 date: 2015-10-21 17:57 UTC
 tags:
 ---
 
-I've been told that learning to program is something that teenagers do and not adults.
-<p><img src="https://s-media-cache-ak0.pinimg.com/236x/56/b1/6d/56b16d6c4823ef581b183f2f87b56b57.jpg"></p>
-I don't have salt water, but do have a lot of sweat and tears involved in learning something
-I've never done before. There is a new challenge every day, and the feeling you get once
-a concept starts to make sense is extremely rewarding. I'm completely outside of my comfort
-zone; however, I'm enjoying each day with its new set of challenges and am looking forward to what the
-future has to bring.
+Erin graduated from Middle Tennessee State University with a degree in audio production, and despite having a love for sound decided to pursue her passion in computer programming. Ever since a young age, she has been fixing computers but decided in 2014 to learn how to write programs. In the fall of 2015, Erin decided to take three months off from life to take an intense programming course at The Iron Yard in back-end engineering learning Ruby on Rails.
+
+When she isn’t learning something new related to code, Erin can be found traveling, reading, and trying different coffee.

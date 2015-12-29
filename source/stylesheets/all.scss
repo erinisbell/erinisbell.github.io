@@ -15,24 +15,17 @@ $creme: #fcded4;
   font-family: 'Futura';
   font-size: 10pt;
   color: black;
-}
-
-* {
-  @include background-image(url("/images/photo.png"));
-  background-position: center;
-  background-size: cover;
-}
-
-.index img {
-  width: 24.5px;
-  background: none;
+  background: #F6F6F6;
 }
 
 .container {
-  color: gray;
+  // color: gray;
   @include outer-container;
   border: 1px solid #ADADAD;
   background: none;
+  @include background-image(url("/images/photo.png"));
+  background-position: center;
+  background-size: cover;
 }
 
 a, a:visited {
@@ -90,26 +83,19 @@ nav{
   nav{
     color: gray;
   }
-  margin: 40px;
   @include span-columns(4);
   color: black;
-}
-
-.header {
-  padding-left: 18px;
-  background: none;
 }
 
 .homenav {
   .btn{
     float: right;
-    padding-right: 37px;
     background: none;
   }
 
   img {
-    height: 150px;
-    width: 200px;
+    height: 75px;
+    width: 100px;
     background: none;
   }
 }
@@ -124,10 +110,12 @@ nav{
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
+  margin-top: 140;
   background: $footer-background;
   padding: $base-spacing;
-  width: 100%;
+  width: 94%;
   display: inline-block;
+
 
   .footer-logo {
     margin-right: 1em;
@@ -141,12 +129,14 @@ nav{
 
   .footer-logo img {
     height: 1.6em;
+    background: $footer-background;
   }
 
   ul {
     line-height: 1.5em;
     margin: 0 0 1em 0;
     padding: 0;
+    background: $footer-background;
 
     @include media($large-screen) {
       float: left;
@@ -159,6 +149,7 @@ nav{
   ul li {
     list-style: none;
     padding-right: 1em;
+    background: $footer-background;
 
     @include media($large-screen) {
       display: inline;
@@ -169,6 +160,7 @@ nav{
   ul li a {
     color: $footer-link-color;
     text-decoration: none;
+    background: $footer-background;
 
     &:focus,
     &:hover {
@@ -177,6 +169,7 @@ nav{
   }
 
   .footer-secondary-links {
+    background: $footer-background;
     @include media($large-screen) {
       float: right;
     }
@@ -209,6 +202,7 @@ nav{
         height: 1.6em;
         opacity: 0.7;
         padding: 1px;
+        background: $footer-background;
 
         &:focus,
         &:hover {
