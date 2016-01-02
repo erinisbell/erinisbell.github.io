@@ -18,14 +18,37 @@ $creme: #fcded4;
   background: #F6F6F6;
 }
 
+.header {
+  background: none;
+  text-align: center;
+}
+
+ul {
+  background: none;
+//   @include span-columns(4);
+//   @include media($medium-screen-up) {
+//     @include span-columns(2);
+//   }
+ }
+
+li {
+  background: none;
+}
+
 .container {
   // color: gray;
   @include outer-container;
   border: 1px solid #ADADAD;
-  background: none;
-  @include background-image(url("/images/photo.png"));
-  background-position: center;
-  background-size: cover;
+  background: #787878;
+  // @include background-image(url("/images/photo.png"));
+  // background-position: center;
+  // background-size: cover;
+    .cntact {
+      background: #787878;
+    }
+    p {
+      background: #787878;
+    }
 }
 
 a, a:visited {
