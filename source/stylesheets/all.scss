@@ -13,56 +13,41 @@ $creme: #fcded4;
 
 * {
   font-family: 'Futura';
-  font-size: 10pt;
+  font-size: 13pt;
   color: black;
   background: #F6F6F6;
 }
 
-.header {
-  background: none;
-  text-align: center;
-}
-
-ul {
-  background: none;
-//   @include span-columns(4);
-//   @include media($medium-screen-up) {
-//     @include span-columns(2);
-//   }
- }
-
-li {
-  background: none;
+html {
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
   // color: gray;
   @include outer-container;
-  border: 1px solid #ADADAD;
-  background: #787878;
+  article { @include span-columns(3) };
+  margin-top: 30px;
   // @include background-image(url("/images/photo.png"));
   // background-position: center;
   // background-size: cover;
-    .cntact {
-      background: #787878;
-    }
-    p {
-      background: #787878;
-    }
+}
+
+.header {
+  background: none;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 a, a:visited {
   text-decoration: none;
   color: black;
-  margin-left: 50px;
-  background: none;
 }
 
 
 .index {
   color: gray;
   margin-left: 50px;
-  background: none;
 }
 
 h2 {
@@ -80,12 +65,7 @@ article{
   }
 }
 
-.index nav{
-  color: gray;
-}
-
 nav{
-  color: gray;
   border-style: 1px solid gray;
   background: none;
   padding: 0;
@@ -94,41 +74,22 @@ nav{
   }
 }
 
-.contact img {
-  width: 24.5px;
-}
-
-.pancake {
-  color: black;
-  background: none;
-}
-
-.master {
-  color: black;
-  background: none;
-}
 .about {
-  nav{
-    color: gray;
-  }
   .pic {
     height: 262px;
     width: 175px;
   }
-  @include span-columns(4);
-  color: black;
 }
 
 .homenav {
+  text-align: center;
   .btn{
-    float: right;
-    background: none;
+   font-weight: normal;
   }
-
-  img {
-    height: 75px;
-    width: 100px;
-    background: none;
+  .me {
+    height: 150px;
+    width: 200px;
+    margin-bottom: 50px;
   }
 }
 
@@ -146,7 +107,8 @@ nav{
   background: $footer-background;
   padding: $base-spacing;
   width: 94%;
-  display: inline-block;
+  display: inline-flex;
+  margin-top: 30px;
 
 
   .footer-logo {

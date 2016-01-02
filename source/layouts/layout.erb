@@ -8,45 +8,42 @@
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
   <!-- Use title if it's in the page YAML frontmatter -->
-  <title><%= current_page.data.title || "Erin Isbell" %></title>
+  <title><%= current_page.data.title || "Erin Isbell | Junior Web Developer" %></title>
 
   <%= stylesheet_link_tag  "all" %>
   <%= javascript_include_tag  "all" %>
 </head>
 
 <body class="<%= page_classes %>">
+
   <nav class="homenav">
-    <img src="./images/EI-Black.png">
-    <a class="btn contact" href="mailto:erinmarie.isbell@gmail.com">Email Me</a>
-    <!-- <%= link_to "About Me", "/about.html", class: 'btn' %> -->
     <%= link_to "Home", "/", class: "btn" %>
-    <hr>
+    <%= link_to "About Me", "/about.html", class: 'btn' %>
+    <img src="./images/Logo-1.png" class="me">
+    <%= link_to "Contact", "/contact.html", class: "btn" %>
   </nav>
+
   <div class="container">
     <%= yield %>
   </div>
-  <hr>
+
 </body>
 <div class="wrapper-for-content-outside-of-footer">
   <footer class="footer-2" role="contentinfo">
-      <ul>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="javascript:void(0)">Contact</a></li>
-      </ul>
 
-      <div class="footer-secondary-links">
-        <ul class="footer-social">
-          <li><a href="https://github.com/erinisbell">
-            <img src="/images/GitHub-Mark-Light-32px.png" alt="GitHub">
-            </a></li>
-          <li><a href="javascript:void(0)">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
-          </a></li>
-          <li><a href="https://www.linkedin.com/in/erinisbell">
-            <img src="/images/In-White-28px-R.png" alt="LinkedIn">
-          </a></li>
-        </ul>
-      </div>
+    <div class="footer-secondary-links">
+      <ul class="footer-social">
+        <li><a href="https://github.com/erinisbell">
+          <img src="/images/GitHub-Mark-Light-32px.png" alt="GitHub">
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/erinisbell">
+          <img src="/images/In-White-28px-R.png" alt="LinkedIn">
+        </a></li>
+      </ul>
+    </div>
   </footer>
 </div>
 </html>
