@@ -12,7 +12,7 @@ $brown: #3d1f1f;
 $creme: #fcded4;
 
 * {
-  font-family: 'Futura';
+  font-family: 'Roboto Slab', serif;
   font-size: 13pt;
   color: black;
   background: #F6F6F6;
@@ -138,9 +138,31 @@ html {
   font-weight: 200;
 }
 
+.experience {
+  font-weight: 100;
+  font-size: 28px;
+  color: dark gray;
+}
+
+.school{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #696969;
+  margin-left: 15px;
+}
+
+.year{
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.dip {
+  font-size: 13px;
+  margin-left: 17px;
+}
 a, a:visited {
   text-decoration: none;
-  color: black;
+  color: #808080;
 }
 
 
@@ -179,10 +201,11 @@ nav{
 }
 
 .codes {
-  width: 200px;
-  height: 200px;
+  width: 165px;
+  height: 165px;
   border: 1.5px solid black;
 }
+
 .footer-2 {
   $base-spacing: 1.5em !default;
   $action-color: #477DCA !default;
