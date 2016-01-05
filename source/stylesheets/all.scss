@@ -19,7 +19,14 @@ $creme: #fcded4;
 }
 
 html {
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px;
+  padding: 0;
 }
 
 .navigation-centered {
@@ -125,7 +132,6 @@ html {
   // color: gray;
   @include outer-container;
   article { @include span-columns(3) };
-  margin-top: 30px;
   // @include background-image(url("/images/photo.png"));
   // background-position: center;
   // background-size: cover;
@@ -168,7 +174,6 @@ a, a:visited {
 
 .index {
   color: gray;
-  margin-left: 50px;
 }
 
 h2 {
@@ -216,13 +221,15 @@ nav{
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
-  margin-top: 140;
   background: $footer-background;
   padding: $base-spacing;
-  width: 94%;
+  width: 100%;
   display: inline-flex;
-  margin-top: 30px;
 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   .footer-logo {
     margin-right: 1em;
