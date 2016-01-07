@@ -37,7 +37,7 @@ body {
   width: 100%;
 
 
-// Mobile view
+  // Mobile view
   .mobile-logo {
     display: inline;
     float: left;
@@ -61,7 +61,7 @@ body {
   }
 
 
-// Nav menu
+  // Nav menu
   .navigation-centered-wrapper {
     @include clearfix;
     @include outer-container;
@@ -87,7 +87,7 @@ body {
   }
 
 
-// Nav items
+  // Nav items
   ul li.nav-link {
     display: block;
     text-align: right;
@@ -112,7 +112,7 @@ body {
   }
 
 
-// Centered logo
+  // Centered logo
   li.logo.nav-link {
     display: none;
     line-height: 0;
@@ -135,26 +135,116 @@ body {
   // @include background-image(url("/images/photo.png"));
   // background-position: center;
   // background-size: cover;
+  .call {
+    font-weight: lighter;
+    font-size: 18px;
+    width: 100%;
+    padding: 0 33%;
+    margin-top: 44px;
+  }
+
+  .number {
+    font-size: 14px;
+    margin-left: 15px;
+    width: 100%;
+    padding: 0 33%;
+    color: #696969;
+  }
 }
 
 .header {
-  background: none;
   text-align: center;
   font-size: 30px;
-  font-weight: 200;
+  font-weight: lighter;
+  margin-top: 45px;
+  margin-bottom: 0;
+  font-family: 'Roboto Slab'
 }
+
+.cntact {
+  font-size: 19px;
+  text-align: center;
+    a, a:visited {
+      font-weight: 200;
+      color: #000000;
+      }
+    a:hover {
+      color: #696969;
+    }
+    div {
+      line-height: 0;
+    }
+}
+
 
 .experience {
   font-weight: 100;
   font-size: 28px;
   color: dark gray;
+    a, a:visited {
+    font-size: 19px;
+    font-weight: lighter;
+    color: #696969;
+    margin-left: 11px;
+    line-height: 0;
+  }
+
+
+
+  .school {
+    margin-bottom: 0;
+    font-size: 19px;
+    font-weight: lighter;
+    color: #696969;
+  }
 }
 
-.school{
-  font-size: 18px;
-  font-weight: lighter;
-  color: #696969;
-  margin-left: 15px;
+.skills {
+  @include span-columns(2);
+  font-weight: 100;
+  font-size: 28px;
+  color: dark gray;
+  float: left;
+  margin-left: 225px;
+  // -webkit-column-count: 2
+}
+
+
+.experience2{
+  font-weight: 100;
+  font-size: 28px;
+  color: dark gray;
+  float: left;
+  a, a:visited {
+    color: black;
+    // @media (min-device-width: 640px) {
+    //   font-size: 12px;
+    // }
+  }
+  a:hover {
+    color: #696969;
+  }
+}
+
+.experience3 {
+  font-weight: 100;
+  font-size: 28px;
+  color: dark gray;
+  // margin-top: 75px;
+  a, a:visited {
+    color: black;
+    // @media (min-device-width: 640px) {
+    //   font-size: 12px;
+    // }
+  }
+  a:hover {
+    color: #696969;
+  }
+}
+
+.experience {
+  float: left;
+  margin-top: 47px;
 }
 
 .year{
@@ -162,9 +252,31 @@ body {
   margin-left: 15px;
 }
 
+.dip2 {
+  font-size: 13px;
+  margin-left: 17px;
+  line-height: 0;
+  float: bottom;
+
+}
+
 .dip {
   font-size: 13px;
   margin-left: 17px;
+  line-height: 0;
+}
+.resume {
+  margin-top: 44px;
+}
+
+.master {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.graduation {
+  font-size: 15px;
+  margin-left: 12px;
 }
 a, a:visited {
   text-decoration: none;
@@ -174,6 +286,11 @@ a, a:visited {
 
 .index {
   color: gray;
+}
+
+.three {
+  @include span-columns(3);
+  text-align: justify;
 }
 
 h2 {
@@ -201,7 +318,8 @@ nav{
 .about {
   .pic {
     height: 262px;
-    width: 175px;
+    width: 200px;
+    border-radius: 10%;
   }
 }
 
