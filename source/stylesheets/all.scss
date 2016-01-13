@@ -4,6 +4,7 @@
 @import "neat";
 // @import "materialize";
 
+
 $darkpink: #fe6d7e;
 $orange: #f19167;
 $salmon: #e8aa9d;
@@ -15,13 +16,14 @@ $creme: #fcded4;
   font-family: 'Roboto Slab', serif;
   font-size: 13pt;
   color: black;
-  background: #F6F6F6;
+
 }
 
 html {
   -webkit-font-smoothing: antialiased;
   position: relative;
   min-height: 100%;
+  background: #F6F6F6;
 }
 
 body {
@@ -29,10 +31,15 @@ body {
   padding: 0;
 }
 
+.nav {
+  background-color: #40526b;
+}
+
 .navigation-centered {
   $large-screen: em(860) !default;
   $centered-navigation-height: 60px;
   $centered-navigation-logo-height: 8em;
+  background-color: #40526b;
 
   width: 100%;
 
@@ -125,6 +132,7 @@ body {
   .logo img {
     margin-bottom: -$centered-navigation-logo-height / 3;
     max-height: $centered-navigation-logo-height;
+      // background-color: #40526b;
   }
 }
 
@@ -137,14 +145,15 @@ body {
   // background-size: cover;
   .call {
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 23px;
     width: 100%;
     padding: 0 33%;
     margin-top: 44px;
   }
 
+
   .number {
-    font-size: 14px;
+    font-size: 20px;
     margin-left: 15px;
     width: 100%;
     padding: 0 33%;
@@ -159,13 +168,14 @@ body {
   margin-top: 45px;
   margin-bottom: 0;
   font-family: 'Roboto Slab'
-}
+  }
 
 .cntact {
+  // @include span-columns(3);
   font-size: 19px;
   text-align: center;
     a, a:visited {
-      font-weight: 200;
+      font-weight: 300;
       color: #000000;
       }
     a:hover {
@@ -258,12 +268,22 @@ body {
 .dip2 {
   font-size: 13px;
   margin-left: 17px;
+  a, a:visited {
+    margin-left: 4px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  a:hover {
+    color: #696969;
+  }
 }
 
 .dip {
   font-size: 13px;
   margin-left: 17px;
-  line-height: 0;
+  line-height: 17px;
 }
 
 .project {
@@ -303,6 +323,13 @@ a, a:visited {
 .three {
   @include span-columns(3);
   text-align: justify;
+  margin-top: 49px;
+  > img {
+    width: 47px;
+    height: 49px;
+    float: right;
+    margin: 0 33%;
+  }  //
 }
 
 h2 {
@@ -336,8 +363,8 @@ nav{
 }
 
 .codes {
-  width: 165px;
-  height: 165px;
+  width: 181px;
+  height: 118px;
   border: 1.5px solid black;
 }
 
